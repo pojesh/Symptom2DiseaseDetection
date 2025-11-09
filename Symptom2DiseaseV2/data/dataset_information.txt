@@ -1,0 +1,75 @@
+SymbiPredict : csv data of 132 symptoms and 41 prognosis. https://data.mendeley.com/datasets/dv5z3v2xyd/1 .
+
+prognosis
+Fungal Infection                 121
+Hepatitis C                      121
+Hepatitis E                      121
+Alcoholic Hepatitis              121
+Tuberculosis                     121
+Common Cold                      121
+Pneumonia                        121
+Dimorphic Hemmorhoids (piles)    121
+Heart Attack                     121
+Varicose Veins                   121
+Hypothyroidism                   121
+Hyperthyroidism                  121
+Hypoglycemia                     121
+Osteoarthritis                   121
+Arthritis                        121
+Vertigo                          121
+Acne                             121
+Urinary Tract Infection          121
+Psoriasis                        121
+Hepatitis D                      121
+Hepatitis B                      121
+Allergy                          121
+Hepatitis A                      121
+GERD                             121
+Chronic Cholestasis              121
+Drug Reaction                    121
+Peptic Ulcer Disease             121
+AIDS                             121
+Diabetes                         121
+Gastroenteritis                  121
+Bronchial Asthma                 121
+Hypertension                     121
+Migraine                         121
+Cervical Spondylosis             121
+Paralysis (brain hemorrhage)     121
+Jaundice                         121
+Malaria                          121
+Chickenpox                       121
+Dengue                           121
+Typhoid                          121
+Impetigo                         121
+Name: count, dtype: int64
+
+
+133 columns , with 132 columns symptoms and prognosis column as disease, row values are 0 or 1 classification values. 
+['itching', 'skin_rash', 'nodal_skin_eruptions', 'continuous_sneezing',
+       'shivering', 'chills', 'joint_pain', 'stomach_pain', 'acidity',
+       'ulcers_on_tongue',
+       ...
+       'blackheads', 'scurring', 'skin_peeling', 'silver_like_dusting',
+       'small_dents_in_nails', 'inflammatory_nails', 'blister',
+       'red_sore_around_nose', 'yellow_crust_ooze', 'prognosis']
+
+
+
+Medquad csv dataset , 
+
+sample head :
+question	answer	focus_area
+0	What is (are) Glaucoma ?	Glaucoma is a group of diseases that can damag...	Glaucoma
+1	What causes Glaucoma ?	Nearly 2.7 million people have glaucoma, a lea...	Glaucoma
+
+focus.area.unique len = 5127
+
+column : Index(['question', 'answer', 'focus_area'], dtype='object')
+
+focus are sample :
+array(['Glaucoma', 'High Blood Pressure', "Paget's Disease of Bone", ...,
+       'Microscopic Colitis: Collagenous Colitis and Lymphocytic Colitis',
+       'Cyclic Vomiting Syndrome',
+       'Diabetic Neuropathies: The Nerve Damage of Diabetes'],
+      shape=(5127,), dtype=object)

@@ -1,0 +1,9 @@
+sentence-transformers
+chromadb
+joblib
+numpy
+pandas
+scispacy
+spacy
+en_ner_bc5cdr_md
+google-generativeai

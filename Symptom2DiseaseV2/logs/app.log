@@ -1,0 +1,288 @@
+2025-11-07 10:19:35,085 - INFO - Loading models and data...
+2025-11-07 10:19:35,524 - INFO - Models and data loaded successfully.
+2025-11-07 10:19:35,524 - INFO - Initializing ChromaDB...
+2025-11-07 10:19:35,539 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 10:19:35,655 - INFO - ChromaDB collection is empty. Adding documents...
+2025-11-07 10:21:32,950 - INFO - Loading models and data...
+2025-11-07 10:21:33,344 - INFO - Models and data loaded successfully.
+2025-11-07 10:21:33,344 - INFO - Initializing ChromaDB...
+2025-11-07 10:21:33,364 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 10:21:33,433 - INFO - ChromaDB collection is empty. Adding documents...
+2025-11-07 10:25:53,535 - INFO - Documents added to ChromaDB successfully.
+2025-11-07 10:25:53,536 - INFO - Initializing Sentence Transformer model...
+2025-11-07 10:25:55,181 - INFO - Using device: cuda
+2025-11-07 10:25:55,181 - INFO - Load pretrained SentenceTransformer: emilyalsentzer/Bio_ClinicalBERT
+2025-11-07 10:25:55,539 - WARNING - No sentence-transformers model found with name emilyalsentzer/Bio_ClinicalBERT. Creating a new one with mean pooling.
+2025-11-07 10:26:01,674 - INFO - Sentence Transformer model initialized successfully.
+2025-11-07 10:26:30,250 - INFO - Finding top symptoms for query: 'i have chest pain and i am struggling to breathe'
+2025-11-07 10:26:31,108 - INFO - Detected symptoms: ['itching', 'skin_rash', 'nodal_skin_eruptions', 'continuous_sneezing', 'shivering', 'chills', 'joint_pain', 'stomach_pain', 'acidity', 'ulcers_on_tongue', 'muscle_wasting', 'vomiting', 'burning_micturition', 'spotting_ urination', 'fatigue', 'weight_gain', 'anxiety', 'cold_hands_and_feets', 'mood_swings', 'weight_loss', 'restlessness', 'lethargy', 'patches_in_throat', 'irregular_sugar_level', 'cough', 'high_fever', 'sunken_eyes', 'breathlessness', 'sweating', 'dehydration', 'indigestion', 'headache', 'yellowish_skin', 'dark_urine', 'nausea', 'loss_of_appetite', 'pain_behind_the_eyes', 'back_pain', 'constipation', 'abdominal_pain', 'diarrhoea', 'mild_fever', 'yellow_urine', 'yellowing_of_eyes', 'acute_liver_failure', 'fluid_overload', 'swelling_of_stomach', 'swelled_lymph_nodes', 'malaise', 'blurred_and_distorted_vision', 'phlegm', 'throat_irritation', 'redness_of_eyes', 'sinus_pressure', 'runny_nose', 'congestion', 'chest_pain', 'weakness_in_limbs', 'fast_heart_rate', 'pain_during_bowel_movements', 'pain_in_anal_region', 'bloody_stool', 'irritation_in_anus', 'neck_pain', 'dizziness', 'cramps', 'bruising', 'obesity', 'swollen_legs', 'swollen_blood_vessels', 'puffy_face_and_eyes', 'enlarged_thyroid', 'brittle_nails', 'swollen_extremeties', 'excessive_hunger', 'extra_marital_contacts', 'drying_and_tingling_lips', 'slurred_speech', 'knee_pain', 'hip_joint_pain', 'muscle_weakness', 'stiff_neck', 'swelling_joints', 'movement_stiffness', 'spinning_movements', 'loss_of_balance', 'unsteadiness', 'weakness_of_one_body_side', 'loss_of_smell', 'bladder_discomfort', 'foul_smell_of urine', 'continuous_feel_of_urine', 'passage_of_gases', 'internal_itching', 'toxic_look_(typhos)', 'depression', 'irritability', 'muscle_pain', 'altered_sensorium', 'red_spots_over_body', 'belly_pain', 'abnormal_menstruation', 'dischromic _patches', 'watering_from_eyes', 'increased_appetite', 'polyuria', 'family_history', 'mucoid_sputum', 'rusty_sputum', 'lack_of_concentration', 'visual_disturbances', 'receiving_blood_transfusion', 'receiving_unsterile_injections', 'coma', 'stomach_bleeding', 'distention_of_abdomen', 'history_of_alcohol_consumption', 'fluid_overload.1', 'blood_in_sputum', 'prominent_veins_on_calf', 'palpitations', 'painful_walking', 'pus_filled_pimples', 'blackheads', 'scurring', 'skin_peeling', 'silver_like_dusting', 'small_dents_in_nails', 'inflammatory_nails', 'blister', 'red_sore_around_nose', 'yellow_crust_ooze']
+2025-11-07 10:26:31,108 - INFO - Predicting diseases for symptoms: ['itching', 'skin_rash', 'nodal_skin_eruptions', 'continuous_sneezing', 'shivering', 'chills', 'joint_pain', 'stomach_pain', 'acidity', 'ulcers_on_tongue', 'muscle_wasting', 'vomiting', 'burning_micturition', 'spotting_ urination', 'fatigue', 'weight_gain', 'anxiety', 'cold_hands_and_feets', 'mood_swings', 'weight_loss', 'restlessness', 'lethargy', 'patches_in_throat', 'irregular_sugar_level', 'cough', 'high_fever', 'sunken_eyes', 'breathlessness', 'sweating', 'dehydration', 'indigestion', 'headache', 'yellowish_skin', 'dark_urine', 'nausea', 'loss_of_appetite', 'pain_behind_the_eyes', 'back_pain', 'constipation', 'abdominal_pain', 'diarrhoea', 'mild_fever', 'yellow_urine', 'yellowing_of_eyes', 'acute_liver_failure', 'fluid_overload', 'swelling_of_stomach', 'swelled_lymph_nodes', 'malaise', 'blurred_and_distorted_vision', 'phlegm', 'throat_irritation', 'redness_of_eyes', 'sinus_pressure', 'runny_nose', 'congestion', 'chest_pain', 'weakness_in_limbs', 'fast_heart_rate', 'pain_during_bowel_movements', 'pain_in_anal_region', 'bloody_stool', 'irritation_in_anus', 'neck_pain', 'dizziness', 'cramps', 'bruising', 'obesity', 'swollen_legs', 'swollen_blood_vessels', 'puffy_face_and_eyes', 'enlarged_thyroid', 'brittle_nails', 'swollen_extremeties', 'excessive_hunger', 'extra_marital_contacts', 'drying_and_tingling_lips', 'slurred_speech', 'knee_pain', 'hip_joint_pain', 'muscle_weakness', 'stiff_neck', 'swelling_joints', 'movement_stiffness', 'spinning_movements', 'loss_of_balance', 'unsteadiness', 'weakness_of_one_body_side', 'loss_of_smell', 'bladder_discomfort', 'foul_smell_of urine', 'continuous_feel_of_urine', 'passage_of_gases', 'internal_itching', 'toxic_look_(typhos)', 'depression', 'irritability', 'muscle_pain', 'altered_sensorium', 'red_spots_over_body', 'belly_pain', 'abnormal_menstruation', 'dischromic _patches', 'watering_from_eyes', 'increased_appetite', 'polyuria', 'family_history', 'mucoid_sputum', 'rusty_sputum', 'lack_of_concentration', 'visual_disturbances', 'receiving_blood_transfusion', 'receiving_unsterile_injections', 'coma', 'stomach_bleeding', 'distention_of_abdomen', 'history_of_alcohol_consumption', 'fluid_overload.1', 'blood_in_sputum', 'prominent_veins_on_calf', 'palpitations', 'painful_walking', 'pus_filled_pimples', 'blackheads', 'scurring', 'skin_peeling', 'silver_like_dusting', 'small_dents_in_nails', 'inflammatory_nails', 'blister', 'red_sore_around_nose', 'yellow_crust_ooze']
+2025-11-07 10:26:31,119 - INFO - Top 3 predicted diseases: ['Common Cold' 'Hypothyroidism' 'Hypoglycemia']
+2025-11-07 10:26:31,119 - INFO - Retrieving evidence for query: 'i have chest pain and i am struggling to breathe' and disease: 'Common Cold'
+2025-11-07 10:26:31,328 - INFO - Retrieved 1 documents from ChromaDB.
+2025-11-07 10:26:31,329 - INFO - Generating explanation with Gemini API...
+2025-11-07 10:26:32,217 - ERROR - Error generating explanation with Gemini API: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-07 10:26:32,217 - ERROR - An error occurred in the main function: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-07 10:28:07,504 - INFO - Loading models and data...
+2025-11-07 10:28:07,872 - INFO - Models and data loaded successfully.
+2025-11-07 10:28:07,872 - INFO - Initializing ChromaDB...
+2025-11-07 10:28:07,896 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 10:28:08,054 - INFO - ChromaDB collection already exists and is not empty.
+2025-11-07 10:28:08,054 - INFO - Initializing Sentence Transformer model...
+2025-11-07 10:28:09,634 - INFO - Using device: cuda
+2025-11-07 10:28:09,634 - INFO - Load pretrained SentenceTransformer: emilyalsentzer/Bio_ClinicalBERT
+2025-11-07 10:28:10,075 - WARNING - No sentence-transformers model found with name emilyalsentzer/Bio_ClinicalBERT. Creating a new one with mean pooling.
+2025-11-07 10:28:14,783 - INFO - Sentence Transformer model initialized successfully.
+2025-11-07 10:28:20,641 - INFO - Finding top symptoms for query: ' i have chest pain and i am struggling to breathe'
+2025-11-07 10:28:20,912 - INFO - Detected symptoms: ['itching', 'skin_rash', 'nodal_skin_eruptions', 'continuous_sneezing', 'shivering', 'chills', 'joint_pain', 'stomach_pain', 'acidity', 'ulcers_on_tongue', 'muscle_wasting', 'vomiting', 'burning_micturition', 'spotting_ urination', 'fatigue', 'weight_gain', 'anxiety', 'cold_hands_and_feets', 'mood_swings', 'weight_loss', 'restlessness', 'lethargy', 'patches_in_throat', 'irregular_sugar_level', 'cough', 'high_fever', 'sunken_eyes', 'breathlessness', 'sweating', 'dehydration', 'indigestion', 'headache', 'yellowish_skin', 'dark_urine', 'nausea', 'loss_of_appetite', 'pain_behind_the_eyes', 'back_pain', 'constipation', 'abdominal_pain', 'diarrhoea', 'mild_fever', 'yellow_urine', 'yellowing_of_eyes', 'acute_liver_failure', 'fluid_overload', 'swelling_of_stomach', 'swelled_lymph_nodes', 'malaise', 'blurred_and_distorted_vision', 'phlegm', 'throat_irritation', 'redness_of_eyes', 'sinus_pressure', 'runny_nose', 'congestion', 'chest_pain', 'weakness_in_limbs', 'fast_heart_rate', 'pain_during_bowel_movements', 'pain_in_anal_region', 'bloody_stool', 'irritation_in_anus', 'neck_pain', 'dizziness', 'cramps', 'bruising', 'obesity', 'swollen_legs', 'swollen_blood_vessels', 'puffy_face_and_eyes', 'enlarged_thyroid', 'brittle_nails', 'swollen_extremeties', 'excessive_hunger', 'extra_marital_contacts', 'drying_and_tingling_lips', 'slurred_speech', 'knee_pain', 'hip_joint_pain', 'muscle_weakness', 'stiff_neck', 'swelling_joints', 'movement_stiffness', 'spinning_movements', 'loss_of_balance', 'unsteadiness', 'weakness_of_one_body_side', 'loss_of_smell', 'bladder_discomfort', 'foul_smell_of urine', 'continuous_feel_of_urine', 'passage_of_gases', 'internal_itching', 'toxic_look_(typhos)', 'depression', 'irritability', 'muscle_pain', 'altered_sensorium', 'red_spots_over_body', 'belly_pain', 'abnormal_menstruation', 'dischromic _patches', 'watering_from_eyes', 'increased_appetite', 'polyuria', 'family_history', 'mucoid_sputum', 'rusty_sputum', 'lack_of_concentration', 'visual_disturbances', 'receiving_blood_transfusion', 'receiving_unsterile_injections', 'coma', 'stomach_bleeding', 'distention_of_abdomen', 'history_of_alcohol_consumption', 'fluid_overload.1', 'blood_in_sputum', 'prominent_veins_on_calf', 'palpitations', 'painful_walking', 'pus_filled_pimples', 'blackheads', 'scurring', 'skin_peeling', 'silver_like_dusting', 'small_dents_in_nails', 'inflammatory_nails', 'blister', 'red_sore_around_nose', 'yellow_crust_ooze']
+2025-11-07 10:28:20,912 - INFO - Predicting diseases for symptoms: ['itching', 'skin_rash', 'nodal_skin_eruptions', 'continuous_sneezing', 'shivering', 'chills', 'joint_pain', 'stomach_pain', 'acidity', 'ulcers_on_tongue', 'muscle_wasting', 'vomiting', 'burning_micturition', 'spotting_ urination', 'fatigue', 'weight_gain', 'anxiety', 'cold_hands_and_feets', 'mood_swings', 'weight_loss', 'restlessness', 'lethargy', 'patches_in_throat', 'irregular_sugar_level', 'cough', 'high_fever', 'sunken_eyes', 'breathlessness', 'sweating', 'dehydration', 'indigestion', 'headache', 'yellowish_skin', 'dark_urine', 'nausea', 'loss_of_appetite', 'pain_behind_the_eyes', 'back_pain', 'constipation', 'abdominal_pain', 'diarrhoea', 'mild_fever', 'yellow_urine', 'yellowing_of_eyes', 'acute_liver_failure', 'fluid_overload', 'swelling_of_stomach', 'swelled_lymph_nodes', 'malaise', 'blurred_and_distorted_vision', 'phlegm', 'throat_irritation', 'redness_of_eyes', 'sinus_pressure', 'runny_nose', 'congestion', 'chest_pain', 'weakness_in_limbs', 'fast_heart_rate', 'pain_during_bowel_movements', 'pain_in_anal_region', 'bloody_stool', 'irritation_in_anus', 'neck_pain', 'dizziness', 'cramps', 'bruising', 'obesity', 'swollen_legs', 'swollen_blood_vessels', 'puffy_face_and_eyes', 'enlarged_thyroid', 'brittle_nails', 'swollen_extremeties', 'excessive_hunger', 'extra_marital_contacts', 'drying_and_tingling_lips', 'slurred_speech', 'knee_pain', 'hip_joint_pain', 'muscle_weakness', 'stiff_neck', 'swelling_joints', 'movement_stiffness', 'spinning_movements', 'loss_of_balance', 'unsteadiness', 'weakness_of_one_body_side', 'loss_of_smell', 'bladder_discomfort', 'foul_smell_of urine', 'continuous_feel_of_urine', 'passage_of_gases', 'internal_itching', 'toxic_look_(typhos)', 'depression', 'irritability', 'muscle_pain', 'altered_sensorium', 'red_spots_over_body', 'belly_pain', 'abnormal_menstruation', 'dischromic _patches', 'watering_from_eyes', 'increased_appetite', 'polyuria', 'family_history', 'mucoid_sputum', 'rusty_sputum', 'lack_of_concentration', 'visual_disturbances', 'receiving_blood_transfusion', 'receiving_unsterile_injections', 'coma', 'stomach_bleeding', 'distention_of_abdomen', 'history_of_alcohol_consumption', 'fluid_overload.1', 'blood_in_sputum', 'prominent_veins_on_calf', 'palpitations', 'painful_walking', 'pus_filled_pimples', 'blackheads', 'scurring', 'skin_peeling', 'silver_like_dusting', 'small_dents_in_nails', 'inflammatory_nails', 'blister', 'red_sore_around_nose', 'yellow_crust_ooze']
+2025-11-07 10:28:20,923 - INFO - Top 3 predicted diseases: ['Common Cold' 'Hypothyroidism' 'Hypoglycemia']
+2025-11-07 10:28:20,923 - INFO - Retrieving evidence for query: ' i have chest pain and i am struggling to breathe' and disease: 'Common Cold'
+2025-11-07 10:28:21,194 - INFO - Retrieved 1 documents from ChromaDB.
+2025-11-07 10:28:21,194 - INFO - Generating explanation with Gemini API...
+2025-11-07 10:28:41,354 - INFO - Explanation generated successfully.
+2025-11-07 10:30:40,928 - INFO - Loading models and data...
+2025-11-07 10:30:41,252 - INFO - Models and data loaded successfully.
+2025-11-07 10:30:41,252 - INFO - Initializing ChromaDB...
+2025-11-07 10:30:41,260 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 10:30:41,378 - INFO - ChromaDB collection already exists and is not empty.
+2025-11-07 10:30:41,378 - INFO - Initializing Sentence Transformer model...
+2025-11-07 10:30:42,948 - INFO - Using device: cuda
+2025-11-07 10:30:42,948 - INFO - Load pretrained SentenceTransformer: emilyalsentzer/Bio_ClinicalBERT
+2025-11-07 10:30:43,322 - WARNING - No sentence-transformers model found with name emilyalsentzer/Bio_ClinicalBERT. Creating a new one with mean pooling.
+2025-11-07 10:30:47,625 - INFO - Sentence Transformer model initialized successfully.
+2025-11-07 10:31:09,321 - INFO - Finding top symptoms for query: 'my chest is paining and im unable to breathe'
+2025-11-07 10:31:10,141 - INFO - Detected symptoms: ['itching', 'skin_rash', 'nodal_skin_eruptions', 'continuous_sneezing', 'shivering', 'chills', 'joint_pain', 'stomach_pain', 'acidity', 'ulcers_on_tongue', 'muscle_wasting', 'vomiting', 'burning_micturition', 'spotting_ urination', 'fatigue', 'weight_gain', 'anxiety', 'cold_hands_and_feets', 'mood_swings', 'weight_loss', 'restlessness', 'lethargy', 'patches_in_throat', 'irregular_sugar_level', 'cough', 'high_fever', 'sunken_eyes', 'breathlessness', 'sweating', 'dehydration', 'indigestion', 'headache', 'yellowish_skin', 'dark_urine', 'nausea', 'loss_of_appetite', 'pain_behind_the_eyes', 'back_pain', 'constipation', 'abdominal_pain', 'diarrhoea', 'mild_fever', 'yellow_urine', 'yellowing_of_eyes', 'acute_liver_failure', 'fluid_overload', 'swelling_of_stomach', 'swelled_lymph_nodes', 'malaise', 'blurred_and_distorted_vision', 'phlegm', 'throat_irritation', 'redness_of_eyes', 'sinus_pressure', 'runny_nose', 'congestion', 'chest_pain', 'weakness_in_limbs', 'fast_heart_rate', 'pain_during_bowel_movements', 'pain_in_anal_region', 'bloody_stool', 'irritation_in_anus', 'neck_pain', 'dizziness', 'cramps', 'bruising', 'obesity', 'swollen_legs', 'swollen_blood_vessels', 'puffy_face_and_eyes', 'enlarged_thyroid', 'brittle_nails', 'swollen_extremeties', 'excessive_hunger', 'extra_marital_contacts', 'drying_and_tingling_lips', 'slurred_speech', 'knee_pain', 'hip_joint_pain', 'muscle_weakness', 'stiff_neck', 'swelling_joints', 'movement_stiffness', 'spinning_movements', 'loss_of_balance', 'unsteadiness', 'weakness_of_one_body_side', 'loss_of_smell', 'bladder_discomfort', 'foul_smell_of urine', 'continuous_feel_of_urine', 'passage_of_gases', 'internal_itching', 'toxic_look_(typhos)', 'depression', 'irritability', 'muscle_pain', 'altered_sensorium', 'red_spots_over_body', 'belly_pain', 'abnormal_menstruation', 'dischromic _patches', 'watering_from_eyes', 'increased_appetite', 'polyuria', 'family_history', 'mucoid_sputum', 'rusty_sputum', 'lack_of_concentration', 'visual_disturbances', 'receiving_blood_transfusion', 'receiving_unsterile_injections', 'coma', 'stomach_bleeding', 'distention_of_abdomen', 'history_of_alcohol_consumption', 'fluid_overload.1', 'blood_in_sputum', 'prominent_veins_on_calf', 'palpitations', 'painful_walking', 'pus_filled_pimples', 'blackheads', 'scurring', 'skin_peeling', 'silver_like_dusting', 'small_dents_in_nails', 'inflammatory_nails', 'blister', 'red_sore_around_nose', 'yellow_crust_ooze']
+2025-11-07 10:31:10,141 - INFO - Predicting diseases for symptoms: ['itching', 'skin_rash', 'nodal_skin_eruptions', 'continuous_sneezing', 'shivering', 'chills', 'joint_pain', 'stomach_pain', 'acidity', 'ulcers_on_tongue', 'muscle_wasting', 'vomiting', 'burning_micturition', 'spotting_ urination', 'fatigue', 'weight_gain', 'anxiety', 'cold_hands_and_feets', 'mood_swings', 'weight_loss', 'restlessness', 'lethargy', 'patches_in_throat', 'irregular_sugar_level', 'cough', 'high_fever', 'sunken_eyes', 'breathlessness', 'sweating', 'dehydration', 'indigestion', 'headache', 'yellowish_skin', 'dark_urine', 'nausea', 'loss_of_appetite', 'pain_behind_the_eyes', 'back_pain', 'constipation', 'abdominal_pain', 'diarrhoea', 'mild_fever', 'yellow_urine', 'yellowing_of_eyes', 'acute_liver_failure', 'fluid_overload', 'swelling_of_stomach', 'swelled_lymph_nodes', 'malaise', 'blurred_and_distorted_vision', 'phlegm', 'throat_irritation', 'redness_of_eyes', 'sinus_pressure', 'runny_nose', 'congestion', 'chest_pain', 'weakness_in_limbs', 'fast_heart_rate', 'pain_during_bowel_movements', 'pain_in_anal_region', 'bloody_stool', 'irritation_in_anus', 'neck_pain', 'dizziness', 'cramps', 'bruising', 'obesity', 'swollen_legs', 'swollen_blood_vessels', 'puffy_face_and_eyes', 'enlarged_thyroid', 'brittle_nails', 'swollen_extremeties', 'excessive_hunger', 'extra_marital_contacts', 'drying_and_tingling_lips', 'slurred_speech', 'knee_pain', 'hip_joint_pain', 'muscle_weakness', 'stiff_neck', 'swelling_joints', 'movement_stiffness', 'spinning_movements', 'loss_of_balance', 'unsteadiness', 'weakness_of_one_body_side', 'loss_of_smell', 'bladder_discomfort', 'foul_smell_of urine', 'continuous_feel_of_urine', 'passage_of_gases', 'internal_itching', 'toxic_look_(typhos)', 'depression', 'irritability', 'muscle_pain', 'altered_sensorium', 'red_spots_over_body', 'belly_pain', 'abnormal_menstruation', 'dischromic _patches', 'watering_from_eyes', 'increased_appetite', 'polyuria', 'family_history', 'mucoid_sputum', 'rusty_sputum', 'lack_of_concentration', 'visual_disturbances', 'receiving_blood_transfusion', 'receiving_unsterile_injections', 'coma', 'stomach_bleeding', 'distention_of_abdomen', 'history_of_alcohol_consumption', 'fluid_overload.1', 'blood_in_sputum', 'prominent_veins_on_calf', 'palpitations', 'painful_walking', 'pus_filled_pimples', 'blackheads', 'scurring', 'skin_peeling', 'silver_like_dusting', 'small_dents_in_nails', 'inflammatory_nails', 'blister', 'red_sore_around_nose', 'yellow_crust_ooze']
+2025-11-07 10:31:10,157 - INFO - Top 3 predicted diseases: ['Common Cold' 'Hypothyroidism' 'Hypoglycemia']
+2025-11-07 10:31:10,157 - INFO - Retrieving evidence for query: 'my chest is paining and im unable to breathe' and disease: 'Common Cold'
+2025-11-07 10:31:10,582 - INFO - Retrieved 1 documents from ChromaDB.
+2025-11-07 10:31:10,582 - INFO - Generating explanation with Gemini API...
+2025-11-07 10:31:27,559 - INFO - Explanation generated successfully.
+2025-11-07 10:33:16,070 - INFO - Loading models and data...
+2025-11-07 10:33:16,426 - INFO - Models and data loaded successfully.
+2025-11-07 10:33:16,426 - INFO - Initializing ChromaDB...
+2025-11-07 10:33:16,442 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 10:33:16,632 - INFO - ChromaDB collection already exists and is not empty.
+2025-11-07 10:33:16,632 - INFO - Initializing Sentence Transformer model...
+2025-11-07 10:33:18,210 - INFO - Using device: cuda
+2025-11-07 10:33:18,210 - INFO - Load pretrained SentenceTransformer: emilyalsentzer/Bio_ClinicalBERT
+2025-11-07 10:33:18,639 - WARNING - No sentence-transformers model found with name emilyalsentzer/Bio_ClinicalBERT. Creating a new one with mean pooling.
+2025-11-07 10:33:23,213 - INFO - Sentence Transformer model initialized successfully.
+2025-11-07 10:33:46,667 - INFO - Finding top symptoms for query: 'my head aches and it bleeds from ears '
+2025-11-07 10:33:47,179 - INFO - Predicting diseases for symptoms: ['itching', 'skin_rash', 'nodal_skin_eruptions', 'continuous_sneezing', 'shivering', 'chills', 'joint_pain', 'stomach_pain', 'acidity', 'ulcers_on_tongue', 'muscle_wasting', 'vomiting', 'burning_micturition', 'spotting_ urination', 'fatigue', 'weight_gain', 'anxiety', 'cold_hands_and_feets', 'mood_swings', 'weight_loss', 'restlessness', 'lethargy', 'patches_in_throat', 'irregular_sugar_level', 'cough', 'high_fever', 'sunken_eyes', 'breathlessness', 'sweating', 'dehydration', 'indigestion', 'headache', 'yellowish_skin', 'dark_urine', 'nausea', 'loss_of_appetite', 'pain_behind_the_eyes', 'back_pain', 'constipation', 'abdominal_pain', 'diarrhoea', 'mild_fever', 'yellow_urine', 'yellowing_of_eyes', 'acute_liver_failure', 'fluid_overload', 'swelling_of_stomach', 'swelled_lymph_nodes', 'malaise', 'blurred_and_distorted_vision', 'phlegm', 'throat_irritation', 'redness_of_eyes', 'sinus_pressure', 'runny_nose', 'congestion', 'chest_pain', 'weakness_in_limbs', 'fast_heart_rate', 'pain_during_bowel_movements', 'pain_in_anal_region', 'bloody_stool', 'irritation_in_anus', 'neck_pain', 'dizziness', 'cramps', 'bruising', 'obesity', 'swollen_legs', 'swollen_blood_vessels', 'puffy_face_and_eyes', 'enlarged_thyroid', 'brittle_nails', 'swollen_extremeties', 'excessive_hunger', 'extra_marital_contacts', 'drying_and_tingling_lips', 'slurred_speech', 'knee_pain', 'hip_joint_pain', 'muscle_weakness', 'stiff_neck', 'swelling_joints', 'movement_stiffness', 'spinning_movements', 'loss_of_balance', 'unsteadiness', 'weakness_of_one_body_side', 'loss_of_smell', 'bladder_discomfort', 'foul_smell_of urine', 'continuous_feel_of_urine', 'passage_of_gases', 'internal_itching', 'toxic_look_(typhos)', 'depression', 'irritability', 'muscle_pain', 'altered_sensorium', 'red_spots_over_body', 'belly_pain', 'abnormal_menstruation', 'dischromic _patches', 'watering_from_eyes', 'increased_appetite', 'polyuria', 'family_history', 'mucoid_sputum', 'rusty_sputum', 'lack_of_concentration', 'visual_disturbances', 'receiving_blood_transfusion', 'receiving_unsterile_injections', 'coma', 'stomach_bleeding', 'distention_of_abdomen', 'history_of_alcohol_consumption', 'fluid_overload.1', 'blood_in_sputum', 'prominent_veins_on_calf', 'palpitations', 'painful_walking', 'pus_filled_pimples', 'blackheads', 'scurring', 'skin_peeling', 'silver_like_dusting', 'small_dents_in_nails', 'inflammatory_nails', 'blister', 'red_sore_around_nose', 'yellow_crust_ooze']
+2025-11-07 10:33:47,188 - INFO - Top 3 predicted diseases: ['Common Cold' 'Hypothyroidism' 'Hypoglycemia']
+2025-11-07 10:33:47,188 - INFO - Retrieving evidence for query: 'my head aches and it bleeds from ears ' and disease: 'Common Cold'
+2025-11-07 10:33:47,458 - INFO - Retrieved 1 documents from ChromaDB.
+2025-11-07 10:33:47,458 - INFO - Generating explanation with Gemini API...
+2025-11-07 10:33:59,640 - INFO - Explanation generated successfully.
+2025-11-07 10:52:39,508 - INFO - Loading models and data...
+2025-11-07 10:52:39,856 - INFO - Models and data loaded successfully.
+2025-11-07 10:52:39,856 - INFO - Initializing ChromaDB...
+2025-11-07 10:52:39,882 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 10:52:40,056 - INFO - ChromaDB collection is empty. Adding documents...
+2025-11-07 10:56:19,678 - INFO - Documents added to ChromaDB successfully.
+2025-11-07 10:56:19,678 - INFO - Initializing Sentence Transformer model...
+2025-11-07 10:56:21,295 - INFO - Using device: cuda
+2025-11-07 10:56:21,295 - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-11-07 10:56:26,773 - INFO - Sentence Transformer model initialized successfully.
+2025-11-07 10:56:51,641 - INFO - Finding top symptoms for query: 'my chest is paining and im unable to breathe'
+2025-11-07 10:56:51,967 - INFO - Predicting diseases for symptoms: ['breathlessness', 'chest_pain']
+2025-11-07 10:56:51,975 - INFO - Top 3 predicted diseases: ['Heart Attack' 'Bronchial Asthma' 'Impetigo']
+2025-11-07 10:56:51,975 - INFO - Retrieving evidence for query: 'my chest is paining and im unable to breathe' and disease: 'Heart Attack'
+2025-11-07 10:56:52,163 - INFO - Retrieved 1 documents from ChromaDB.
+2025-11-07 10:56:52,163 - INFO - Generating explanation with Gemini API...
+2025-11-07 10:57:00,694 - INFO - Explanation generated successfully.
+2025-11-07 10:59:06,748 - INFO - Loading models and data...
+2025-11-07 10:59:07,069 - INFO - Models and data loaded successfully.
+2025-11-07 10:59:07,069 - INFO - Initializing ChromaDB...
+2025-11-07 10:59:07,096 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 10:59:07,243 - INFO - ChromaDB collection already exists and is not empty.
+2025-11-07 10:59:07,243 - INFO - Initializing Sentence Transformer model...
+2025-11-07 10:59:08,812 - INFO - Using device: cuda
+2025-11-07 10:59:08,820 - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-11-07 10:59:14,137 - INFO - Sentence Transformer model initialized successfully.
+2025-11-07 10:59:21,880 - INFO - Finding top symptoms for query: 'my chest is paining and im unable to breathe'
+2025-11-07 10:59:22,102 - INFO - Predicting diseases for symptoms: ['breathlessness', 'chest_pain']
+2025-11-07 10:59:22,102 - INFO - Top 3 predicted diseases: ['Heart Attack' 'Bronchial Asthma' 'Impetigo']
+2025-11-07 10:59:22,102 - INFO - Retrieving evidence for query: 'my chest is paining and im unable to breathe' and disease: 'Heart Attack'
+2025-11-07 10:59:22,377 - INFO - Retrieved 1 documents from ChromaDB.
+2025-11-07 10:59:22,377 - INFO - Generating explanation with Gemini API...
+2025-11-07 10:59:30,791 - INFO - Explanation generated successfully.
+2025-11-07 11:00:44,310 - INFO - Loading models and data...
+2025-11-07 11:00:44,653 - INFO - Models and data loaded successfully.
+2025-11-07 11:00:44,653 - INFO - Initializing ChromaDB...
+2025-11-07 11:00:44,668 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 11:00:44,789 - INFO - ChromaDB collection already exists and is not empty.
+2025-11-07 11:00:44,789 - INFO - Initializing Sentence Transformer model...
+2025-11-07 11:00:45,281 - INFO - Using device: cuda
+2025-11-07 11:00:45,281 - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-11-07 11:00:50,760 - INFO - Sentence Transformer model initialized successfully.
+2025-11-07 11:00:55,408 - INFO - Finding top symptoms for query: 'my chest is paining and im unable to breathe'
+2025-11-07 11:00:55,646 - INFO - Predicting diseases for symptoms: ['breathlessness', 'chest_pain']
+2025-11-07 11:00:55,655 - INFO - Top 3 predicted diseases: ['Heart Attack' 'Bronchial Asthma' 'Impetigo']
+2025-11-07 11:00:55,655 - INFO - Retrieving evidence for query: 'my chest is paining and im unable to breathe' and disease: 'Heart Attack'
+2025-11-07 11:00:55,933 - INFO - Retrieved 1 documents from ChromaDB.
+2025-11-07 11:00:55,933 - INFO - Generating explanation with Gemini API...
+2025-11-07 11:01:01,437 - INFO - Explanation generated successfully.
+2025-11-07 11:05:09,748 - INFO - Loading models and data...
+2025-11-07 11:05:10,089 - INFO - Models and data loaded successfully.
+2025-11-07 11:05:10,091 - INFO - Initializing ChromaDB...
+2025-11-07 11:05:10,102 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 11:05:10,221 - INFO - ChromaDB collection already exists and is not empty.
+2025-11-07 11:05:10,221 - INFO - Initializing Sentence Transformer model...
+2025-11-07 11:05:11,828 - INFO - Using device: cuda
+2025-11-07 11:05:11,840 - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-11-07 11:05:19,828 - INFO - Sentence Transformer model initialized successfully.
+2025-11-07 11:05:26,309 - INFO - Finding top symptoms for query: 'my chest is paining and im unable to breathe'
+2025-11-07 11:05:26,545 - INFO - Predicting diseases for symptoms: ['breathlessness', 'chest_pain']
+2025-11-07 11:05:26,554 - INFO - Top 3 predicted diseases: ['Heart Attack' 'Bronchial Asthma' 'Impetigo']
+2025-11-07 11:05:26,554 - INFO - Retrieving evidence for query: 'my chest is paining and im unable to breathe' and disease: 'Heart Attack'
+2025-11-07 11:05:26,844 - INFO - Retrieved 1 documents from ChromaDB.
+2025-11-07 11:05:26,844 - INFO - Generating explanation with Gemini API...
+2025-11-07 11:05:37,666 - INFO - Explanation generated successfully.
+2025-11-07 11:15:52,081 - INFO - Loading models and data...
+2025-11-07 11:15:52,429 - INFO - Models and data loaded successfully.
+2025-11-07 11:15:52,429 - INFO - Initializing ChromaDB...
+2025-11-07 11:15:52,429 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 11:15:52,571 - INFO - ChromaDB collection already exists and is not empty.
+2025-11-07 11:15:52,571 - INFO - Initializing Sentence Transformer model...
+2025-11-07 11:15:54,184 - INFO - Using device: cuda
+2025-11-07 11:15:54,196 - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-11-07 11:15:59,974 - INFO - Sentence Transformer model initialized successfully.
+2025-11-07 11:16:10,968 - INFO - Finding top symptoms for query: 'my chest is paining and im unable to breathe'
+2025-11-07 11:16:11,354 - INFO - Predicting diseases for symptoms: ['breathlessness', 'chest_pain']
+2025-11-07 11:16:11,363 - INFO - Top 3 predicted diseases: ['Heart Attack' 'Bronchial Asthma' 'Impetigo']
+2025-11-07 11:16:11,363 - INFO - Retrieving evidence for query: 'my chest is paining and im unable to breathe' and disease: 'Heart Attack'
+2025-11-07 11:16:11,775 - INFO - Retrieved 3 documents from ChromaDB.
+2025-11-07 11:16:11,775 - INFO - Generating explanation with Gemini API...
+2025-11-07 11:16:19,841 - INFO - Explanation generated successfully.
+2025-11-07 11:20:06,789 - INFO - Loading models and data...
+2025-11-07 11:20:07,113 - INFO - Models and data loaded successfully.
+2025-11-07 11:20:07,113 - INFO - Initializing ChromaDB...
+2025-11-07 11:20:07,130 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 11:20:07,262 - INFO - ChromaDB collection already exists and is not empty.
+2025-11-07 11:20:07,262 - INFO - Initializing Sentence Transformer model...
+2025-11-07 11:20:08,838 - INFO - Using device: cuda
+2025-11-07 11:20:08,838 - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-11-07 11:20:13,846 - INFO - Sentence Transformer model initialized successfully.
+2025-11-07 11:20:19,775 - INFO - Finding top symptoms for query: 'my chest is paining and im unable to breathe'
+2025-11-07 11:20:19,992 - INFO - Predicting diseases for symptoms: ['breathlessness', 'chest_pain']
+2025-11-07 11:20:19,992 - INFO - Top 3 predicted diseases: ['Heart Attack' 'Bronchial Asthma' 'Impetigo']
+2025-11-07 11:20:19,992 - INFO - Retrieving evidence for query: 'my chest is paining and im unable to breathe' and disease: 'Heart Attack'
+2025-11-07 11:20:20,295 - INFO - Retrieved 3 documents from ChromaDB.
+2025-11-07 11:20:20,295 - INFO - Generating explanation with Gemini API...
+2025-11-07 11:20:27,981 - INFO - Explanation generated successfully.
+2025-11-07 11:27:33,423 - INFO - Loading models and data...
+2025-11-07 11:27:33,755 - INFO - Models and data loaded successfully.
+2025-11-07 11:27:33,756 - INFO - Initializing ChromaDB...
+2025-11-07 11:27:33,770 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 11:27:33,842 - INFO - ChromaDB collection is empty. Adding documents...
+2025-11-07 11:31:49,407 - INFO - Documents added to ChromaDB successfully.
+2025-11-07 11:31:49,413 - INFO - Initializing Sentence Transformer model...
+2025-11-07 11:31:51,015 - INFO - Using device: cuda
+2025-11-07 11:31:51,015 - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-11-07 11:31:55,979 - INFO - Sentence Transformer model initialized successfully.
+2025-11-07 11:33:49,198 - INFO - Finding top symptoms for query: 'my chest is paining and im unable to breathe'
+2025-11-07 11:33:49,530 - INFO - Predicting diseases for symptoms: ['breathlessness', 'chest_pain']
+2025-11-07 11:33:49,530 - INFO - Top 3 predicted diseases: ['Heart Attack' 'Bronchial Asthma' 'Impetigo']
+2025-11-07 11:33:49,530 - INFO - Retrieving evidence for query: 'my chest is paining and im unable to breathe' and disease: 'Heart Attack'
+2025-11-07 11:33:49,736 - INFO - Retrieved 3 documents from ChromaDB.
+2025-11-07 11:33:49,736 - INFO - Generating explanation with Gemini API...
+2025-11-07 11:33:57,845 - INFO - Explanation generated successfully.
+2025-11-07 11:35:02,039 - INFO - Loading models and data...
+2025-11-07 11:35:03,516 - INFO - Models and data loaded successfully.
+2025-11-07 11:35:03,516 - INFO - Initializing ChromaDB...
+2025-11-07 11:35:03,659 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 11:35:03,849 - INFO - ChromaDB collection already exists and is not empty.
+2025-11-07 11:35:03,849 - INFO - Initializing Sentence Transformer model...
+2025-11-07 11:35:05,435 - INFO - Using device: cuda
+2025-11-07 11:35:05,435 - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-11-07 11:35:18,777 - INFO - Sentence Transformer model initialized successfully.
+2025-11-07 11:37:31,946 - INFO - Finding top symptoms for query: 'my butt is paining and i am bleeding from asshole'
+2025-11-07 11:37:32,548 - INFO - Predicting diseases for symptoms: ['swelling_of_stomach', 'bloody_stool', 'bruising', 'stomach_bleeding']
+2025-11-07 11:37:32,559 - INFO - Top 3 predicted diseases: ['Dimorphic Hemmorhoids (piles)' 'Alcoholic Hepatitis' 'Hepatitis E']
+2025-11-07 11:37:32,559 - INFO - Retrieving evidence for query: 'my butt is paining and i am bleeding from asshole' and disease: 'Dimorphic Hemmorhoids (piles)'
+2025-11-07 11:37:33,031 - INFO - Retrieved 3 documents from ChromaDB.
+2025-11-07 11:37:33,031 - INFO - Generating explanation with Gemini API...
+2025-11-07 11:37:42,487 - INFO - Explanation generated successfully.
+2025-11-09 20:20:50,523 - INFO - Loading models and data...
+2025-11-09 20:20:51,940 - INFO - Models and data loaded successfully.
+2025-11-09 20:20:51,940 - INFO - Initializing ChromaDB...
+2025-11-09 20:20:52,087 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-09 20:20:52,426 - INFO - ChromaDB collection already exists and is not empty.
+2025-11-09 20:20:52,441 - INFO - Initializing Sentence Transformer model...
+2025-11-09 20:20:52,461 - INFO - Using device: cuda
+2025-11-09 20:20:52,461 - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-11-09 20:21:02,603 - INFO - Sentence Transformer model initialized successfully.
+2025-11-09 20:21:52,376 - INFO - Finding top symptoms for query: 'my stomach hurts every morning as soon as i wake up '
+2025-11-09 20:21:53,121 - INFO - Predicting diseases for symptoms: ['stomach_pain', 'vomiting', 'nausea', 'abdominal_pain', 'belly_pain', 'stomach_bleeding']
+2025-11-09 20:21:53,134 - INFO - Top 3 predicted diseases: ['Typhoid' 'Hepatitis E' 'GERD']
+2025-11-09 20:21:53,139 - INFO - Retrieving evidence for query: 'my stomach hurts every morning as soon as i wake up ' and disease: 'Typhoid'
+2025-11-09 20:21:54,066 - INFO - Retrieved 3 documents from ChromaDB.
+2025-11-09 20:21:54,066 - INFO - Generating explanation with Gemini API...
+2025-11-09 20:21:54,649 - ERROR - Error generating explanation with Gemini API: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-09 20:24:27,017 - INFO - Finding top symptoms for query: 'hi'
+2025-11-09 20:25:06,327 - INFO - Finding top symptoms for query: 'i have stomach pain every night '
+2025-11-09 20:25:06,453 - INFO - Predicting diseases for symptoms: ['stomach_pain', 'vomiting', 'nausea', 'constipation', 'abdominal_pain', 'swelling_of_stomach', 'pain_during_bowel_movements', 'cramps', 'belly_pain', 'stomach_bleeding']
+2025-11-09 20:25:06,466 - INFO - Top 3 predicted diseases: ['Typhoid' 'Dimorphic Hemmorhoids (piles)' 'Varicose Veins']
+2025-11-09 20:25:06,471 - INFO - Retrieving evidence for query: 'i have stomach pain every night ' and disease: 'Typhoid'
+2025-11-09 20:25:06,935 - INFO - Retrieved 3 documents from ChromaDB.
+2025-11-09 20:25:06,935 - INFO - Generating explanation with Gemini API...
+2025-11-09 20:25:07,445 - ERROR - Error generating explanation with Gemini API: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-09 20:25:44,890 - INFO - Loading models and data...
+2025-11-09 20:25:45,152 - INFO - Models and data loaded successfully.
+2025-11-09 20:25:45,152 - INFO - Initializing ChromaDB...
+2025-11-09 20:25:45,178 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-09 20:25:45,362 - INFO - ChromaDB collection already exists and is not empty.
+2025-11-09 20:25:45,365 - INFO - Initializing Sentence Transformer model...
+2025-11-09 20:25:45,383 - INFO - Using device: cuda
+2025-11-09 20:25:45,387 - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-11-09 20:25:51,032 - INFO - Sentence Transformer model initialized successfully.
+2025-11-09 20:26:25,456 - INFO - Finding top symptoms for query: 'i have stomach pain every night for past 5 days'
+2025-11-09 20:26:25,897 - INFO - Predicting diseases for symptoms: ['stomach_pain', 'nausea', 'abdominal_pain', 'pain_during_bowel_movements', 'cramps', 'belly_pain', 'stomach_bleeding']
+2025-11-09 20:26:25,911 - INFO - Top 3 predicted diseases: ['Typhoid' 'Varicose Veins' 'Hepatitis E']
+2025-11-09 20:26:25,919 - INFO - Retrieving evidence for query: 'i have stomach pain every night for past 5 days' and disease: 'Typhoid'
+2025-11-09 20:26:26,613 - INFO - Retrieved 3 documents from ChromaDB.
+2025-11-09 20:26:26,613 - INFO - Generating explanation with Gemini API...
+2025-11-09 20:26:27,043 - ERROR - Error generating explanation with Gemini API: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-09 20:27:41,892 - INFO - Loading models and data...
+2025-11-09 20:27:42,283 - INFO - Models and data loaded successfully.
+2025-11-09 20:27:42,283 - INFO - Initializing ChromaDB...
+2025-11-09 20:27:42,315 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-09 20:27:42,468 - INFO - ChromaDB collection already exists and is not empty.
+2025-11-09 20:27:42,470 - INFO - Initializing Sentence Transformer model...
+2025-11-09 20:27:42,497 - INFO - Using device: cuda
+2025-11-09 20:27:42,500 - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-11-09 20:27:49,888 - INFO - Sentence Transformer model initialized successfully.
+2025-11-09 20:30:06,260 - INFO - Finding top symptoms for query: 'i dont feel to do anything. i am always tired and feel like i gave up on life'
+2025-11-09 20:30:19,689 - INFO - Finding top symptoms for query: 'i have dry hair and dandruff'
+2025-11-09 20:30:20,762 - INFO - Finding top symptoms for query: 'i have dry hair and dandruff'
+2025-11-09 20:32:58,600 - INFO - Finding top symptoms for query: 'put i have headache and I just had a stroke'
+2025-11-09 20:32:58,724 - INFO - Predicting diseases for symptoms: ['headache']
+2025-11-09 20:32:58,739 - INFO - Top 3 predicted diseases: ['Paralysis (brain hemorrhage)' 'Hypertension ' 'Vertigo']
+2025-11-09 20:32:58,749 - INFO - Retrieving evidence for query: 'put i have headache and I just had a stroke' and disease: 'Paralysis (brain hemorrhage)'
+2025-11-09 20:32:59,479 - INFO - Retrieved 3 documents from ChromaDB.
+2025-11-09 20:32:59,479 - INFO - Generating explanation with Gemini API...
+2025-11-09 20:33:13,348 - INFO - Explanation generated successfully.
+2025-11-09 20:35:38,314 - INFO - Finding top symptoms for query: 'i have severe eye pain and red eyes '
+2025-11-09 20:35:38,440 - INFO - Predicting diseases for symptoms: ['sunken_eyes', 'headache', 'pain_behind_the_eyes', 'redness_of_eyes', 'red_sore_around_nose']
+2025-11-09 20:35:38,453 - INFO - Top 3 predicted diseases: ['Dengue' 'Gastroenteritis' 'Common Cold']
+2025-11-09 20:35:38,458 - INFO - Retrieving evidence for query: 'i have severe eye pain and red eyes ' and disease: 'Dengue'
+2025-11-09 20:35:38,918 - INFO - Retrieved 3 documents from ChromaDB.
+2025-11-09 20:35:38,918 - INFO - Generating explanation with Gemini API...
+2025-11-09 20:35:51,658 - INFO - Explanation generated successfully.
+2025-11-09 20:38:18,505 - INFO - Finding top symptoms for query: 'my chest is paining and im unable to breathe'
+2025-11-09 20:38:18,617 - INFO - Predicting diseases for symptoms: ['breathlessness', 'chest_pain']
+2025-11-09 20:38:18,633 - INFO - Top 3 predicted diseases: ['Heart Attack' 'Bronchial Asthma' 'Impetigo']
+2025-11-09 20:38:18,649 - INFO - Retrieving evidence for query: 'my chest is paining and im unable to breathe' and disease: 'Heart Attack'
+2025-11-09 20:38:19,194 - INFO - Retrieved 3 documents from ChromaDB.
+2025-11-09 20:38:19,194 - INFO - Generating explanation with Gemini API...
+2025-11-09 20:38:27,346 - INFO - Explanation generated successfully.
+2025-11-09 20:48:09,859 - INFO - Finding top symptoms for query: 'i have headaches and blood leakage from ears but i do not have brain tumor as i diagnosed earlier'
+2025-11-09 20:48:09,984 - INFO - Predicting diseases for symptoms: ['headache']
+2025-11-09 20:48:09,996 - INFO - Top 3 predicted diseases: ['Paralysis (brain hemorrhage)' 'Hypertension ' 'Vertigo']
+2025-11-09 20:48:10,003 - INFO - Retrieving evidence for query: 'i have headaches and blood leakage from ears but i do not have brain tumor as i diagnosed earlier' and disease: 'Paralysis (brain hemorrhage)'
+2025-11-09 20:48:10,566 - INFO - Retrieved 3 documents from ChromaDB.
+2025-11-09 20:48:10,566 - INFO - Generating explanation with Gemini API...
+2025-11-09 20:48:24,227 - INFO - Explanation generated successfully.

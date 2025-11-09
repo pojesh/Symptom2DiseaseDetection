@@ -1,0 +1,53 @@
+PS C:\Users\Pojesh\Documents\GitHub\Symptom2DiseaseDetection\Symptom2DiseaseV2> python src/inference.py
+2025-11-07 11:15:52,081 - INFO - Loading models and data...
+2025-11-07 11:15:52,429 - INFO - Models and data loaded successfully.
+2025-11-07 11:15:52,429 - INFO - Initializing ChromaDB...
+2025-11-07 11:15:52,429 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 11:15:52,571 - INFO - ChromaDB collection already exists and is not empty.
+2025-11-07 11:15:52,571 - INFO - Initializing Sentence Transformer model...
+2025-11-07 11:15:54,184 - INFO - Using device: cuda
+2025-11-07 11:15:54,196 - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-11-07 11:15:59,974 - INFO - Sentence Transformer model initialized successfully.
+Describe your symptoms: my chest is paining and im unable to breathe
+2025-11-07 11:16:10,968 - INFO - Finding top symptoms for query: 'my chest is paining and im unable to breathe'
+Batches: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.29it/s]
+Batches: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 60.97it/s]
+2025-11-07 11:16:11,354 - INFO - Predicting diseases for symptoms: ['breathlessness', 'chest_pain']
+2025-11-07 11:16:11,363 - INFO - Top 3 predicted diseases: ['Heart Attack' 'Bronchial Asthma' 'Impetigo']
+
+Top predictions:
+Heart Attack: 87.00% likelihood
+Bronchial Asthma: 4.00% likelihood
+Impetigo: 2.00% likelihood
+2025-11-07 11:16:11,363 - INFO - Retrieving evidence for query: 'my chest is paining and im unable to breathe' and disease: 'Heart Attack'
+2025-11-07 11:16:11,775 - INFO - Retrieved 3 documents from ChromaDB.
+2025-11-07 11:16:11,775 - INFO - Generating explanation with Gemini API...
+2025-11-07 11:16:19,841 - INFO - Explanation generated successfully.
+
+LLM Explanation:
+ It sounds like you're experiencing concerning symptoms with chest pain and difficulty breathing. It's important to understand what might be causing them, but please remember that this is guidance, not a diagnosis. For symptoms like yours, it's crucial to seek immediate medical attention.
+
+Here's an explanation of the predicted diseases:
+
+### Predicted Diseases:
+
+1.  **Heart Attack**
+    *   **Likelihood:** **High.** Your symptoms of chest pain and breathlessness are key indicators often associated with a heart attack. The retrieved information strongly emphasizes that discomfort in the center of the chest lasting more than a few minutes, especially when accompanied by shortness of breath, can signal a heart attack.
+    *   **Description:** A heart attack occurs when the blood flow to a part of the heart muscle is blocked, often due to a clot. This can damage or destroy a section of the heart muscle.
+    *   **Evidence Support:** The evidence highlights that chest discomfort (which can feel like pressure, squeezing, or fullness) combined with shortness of breath are common signs of a heart attack. It also notes that pain might extend to other areas like the arms, back, or jaw, and other symptoms like sweating or nausea might occur. The evidence strongly advises getting immediate medical care for persistent chest pain or crushing chest pain, especially when accompanied by shortness of breath. While other conditions like Pericarditis can mimic heart attack pain, the severe nature of your symptoms aligns well with the evidence's description of a heart attack.
+
+2.  **Bronchial Asthma**
+    *   **Likelihood:** **Possible.** Breathlessness is a primary symptom of bronchial asthma. While chest pain isn't always the main symptom, it can occur due to the effort of breathing or muscle strain.
+    *   **Description:** Bronchial asthma is a chronic lung disease where your airways narrow and swell, making it difficult to breathe. This can lead to coughing, wheezing, and shortness of breath.
+    *   **Evidence Support:** The provided evidence does **not** contain specific information about Bronchial Asthma. Therefore, the support for this prediction is based on general medical understanding of the symptoms, not the retrieved documents.
+
+3.  **Impetigo**
+    *   **Likelihood:** **Very Low/Unlikely.** Impetigo is a common bacterial skin infection, typically causing red sores or blisters, usually on the face, neck, or hands. It does not typically cause chest pain or breathlessness.
+    *   **Description:** Impetigo is a contagious skin infection that results in red sores that quickly rupture, ooze, and then form a yellowish-brown crust.
+    *   **Evidence Support:** The provided evidence does **not** contain any information about Impetigo. Therefore, there is no evidence to support this prediction in relation to your reported symptoms.
+
+### Summary and Recommendation:
+
+Given your symptoms of chest pain and breathlessness, a **Heart Attack** is a significant concern and aligns strongly with the information provided in the evidence, which emphasizes the urgency of these symptoms. While **Bronchial Asthma** could explain breathlessness, the evidence does not directly support it. **Impetigo** is highly unlikely to be related to your symptoms.
+
+**Due to the serious nature of chest pain and difficulty breathing, particularly the strong possibility of a heart attack, you should seek immediate medical attention by calling emergency services or going to the nearest emergency room without delay.** This AI is for guidance and cannot diagnose or replace professional medical advice.

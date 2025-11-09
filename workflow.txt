@@ -1,0 +1,33 @@
+End-to-End Flow
+1. Symptom Extraction and RF Prognosis Prediction
+Input: Free-form symptom description (natural language)
+
+Output:
+
+List of matched symptom column names (using embedding similarity threshold)
+
+RF model top-k prognosis predictions (from your 41-class train set)
+
+2. Semantic Retrieval from ChromaDB
+Build a query by concatenating:
+
+The original user symptom description text
+
+The name(s) of the predicted disease(s)
+
+Use this query for embedding (ClinicalBERT), then perform vector similarity search against your ChromaDB corpus (containing thousands of documents, each with “focus_area”, Q/A, etc.)
+
+Retrieve the top N documents (e.g., 3–5) most similar to the query.
+
+3. LLM-Guided Explanation
+Send to your LLM API (Gemini, GPT, etc.):
+
+The detected symptoms (names or original text)
+
+The predicted prognosis
+
+The retrieved evidence/texts from ChromaDB (full text or excerpts)
+
+Request a guided summary, e.g.:
+
+“Based on the user's symptoms and retrieved medical evidence, present the reasoning leading to the predicted prognosis and offer advice.”
