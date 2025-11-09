@@ -1,0 +1,24 @@
+# Configuration for the Symptom2Disease Application
+
+# --- Prediction Mode ---
+# use_rf_prediction:
+#   true:  Use the Random Forest model for predictions. If no symptoms are found,
+#          it will fall back to a direct RAG-based knowledge search.
+#   false: Skip the Random Forest model and use the RAG pipeline directly to
+#          infer conditions from the user's query and the knowledge base.
+use_rf_prediction: true
+
+# --- Model and Data Paths ---
+# Paths are relative to the project root directory (Symptom2DiseaseV2)
+model_paths:
+  rf_model: "models/rf_model.joblib"
+  label_encoder: "models/label_encoder.joblib"
+  symptom_columns: "models/symptom_columns.joblib"
+
+database:
+  chroma_db_path: "data/db"
+  collection_name: "medical_info"
+
+# --- Generative Model ---
+# The model name for the Gemini API
+generative_model: "gemini-2.5-flash"
