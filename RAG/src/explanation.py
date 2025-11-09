@@ -1,7 +1,7 @@
 # src/explanation.py
 import google.generativeai as palm
 
-palm.configure(api_key='AIzaSyBEvspX-6hvESm99snIwoF_TBuXZN4D5Hg')
+palm.configure(api_key='api key')
 
 def generate_explanation(symptoms, diseases, medical_evidence):
     prompt = (
