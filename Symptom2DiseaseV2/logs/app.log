@@ -335,3 +335,19 @@
 2025-11-09 22:07:35,045 - INFO - Running in RF prediction mode.
 2025-11-09 22:07:36,098 - INFO - Generating explanation with Gemini API in 'prediction' mode...
 2025-11-09 22:07:44,716 - INFO - Explanation generated successfully.
+2025-11-10 10:28:37,780 - INFO - Configuration loaded successfully.
+2025-11-10 10:28:37,860 - INFO - Loading all resources...
+2025-11-10 10:28:37,860 - INFO - Loading models and data...
+2025-11-10 10:28:40,147 - INFO - Models and data loaded successfully.
+2025-11-10 10:28:40,147 - INFO - Initializing ChromaDB...
+2025-11-10 10:28:40,400 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-10 10:28:41,124 - INFO - ChromaDB collection already populated.
+2025-11-10 10:28:41,124 - INFO - Initializing Sentence Transformer model...
+2025-11-10 10:28:41,155 - INFO - Load pretrained SentenceTransformer: paraphrase-MiniLM-L6-v2
+2025-11-10 10:29:00,230 - INFO - Sentence Transformer model initialized on cuda.
+2025-11-10 10:29:00,232 - INFO - All resources loaded successfully.
+2025-11-10 10:30:05,275 - INFO - Configuration loaded successfully.
+2025-11-10 10:30:05,505 - INFO - Configuration loaded successfully.
+2025-11-10 10:30:05,512 - INFO - Running in RF prediction mode.
+2025-11-10 10:30:08,227 - INFO - Generating explanation with Gemini API in 'prediction' mode...
+2025-11-10 10:30:15,754 - INFO - Explanation generated successfully.
